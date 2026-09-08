@@ -1,0 +1,7 @@
+{
+  "question": "Should this project use TypeScript or JavaScript?",
+  "original_request": "Extend our existing dashboard with a settings page.",
+  "project_context": "The dashboard uses TypeScript and has a strict tsconfig.json.",
+  "known_preferences": "Follow the existing project conventions.",
+  "session_id": "demo"
+}

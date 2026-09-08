@@ -1,0 +1,9 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>BhootMCP</title><link rel="stylesheet" href="popup.css"></head>
+<body><h1>BhootMCP</h1><p>Connect a dedicated Claude tab using Sonnet 5 Medium.</p>
+<label for="token">Local pairing code</label><input id="token" type="password" autocomplete="off" placeholder="Paste the code from setup">
+<button id="pair">Pair with local bridge</button>
+<button id="start">Start Claude tab</button><button id="stop">Pause</button>
+<p id="status" role="status">Start the local bridge, then pair.</p>
+<small>Uses your Claude account. Acts only in its dedicated tab. Keep that tab open and signed in. No Opus or API keys.</small>
+<script src="popup.js"></script></body></html>

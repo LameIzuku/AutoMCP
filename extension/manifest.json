@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "BhootMCP Sonnet Bridge",
+  "version": "0.2.3",
+  "description": "Send BhootMCP clarification jobs through a dedicated signed-in Claude Sonnet tab.",
+  "permissions": ["storage", "alarms"],
+  "host_permissions": ["https://claude.ai/*", "http://127.0.0.1/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [{ "matches": ["https://claude.ai/*"], "js": ["content.js"], "run_at": "document_idle" }],
+  "action": { "default_title": "BhootMCP", "default_popup": "popup.html" }
+}

@@ -1,0 +1,5 @@
+Run a BhootMCP integration test only. Do not edit files or execute shell commands.
+Actually call the bhoot server's resolve_clarification MCP tool with these arguments:
+{"question":"Should this project use TypeScript or JavaScript?","original_request":"Extend our existing dashboard with a settings page.","project_context":"The dashboard uses TypeScript and has a strict tsconfig.json.","known_preferences":"Follow the existing project conventions.","session_id":"grok-integration-test","requires_user_input":false}
+After the tool returns, if status is resolved and mock=false, continue in this same turn: give a one-sentence implementation recommendation based on its answer, followed by the exact line BHOOT_GROK_CONTINUATION_OK.
+If the tool fails or requires user input, report the actual failure and do not print the success marker. Do not invent tool results. This test ends after the recommendation; do not implement the settings page.

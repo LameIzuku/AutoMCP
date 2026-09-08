@@ -1,0 +1,13 @@
+# Merge the MCP section into the desired Grok config; do not overwrite existing settings.
+# The process inherits credentials and model IDs from the environment that launches Grok.
+[mcp_servers.bhoot]
+command = 'C:\Program Files\nodejs\node.exe'
+args = ['C:\path\to\AutoMCP\dist\server.js']
+startup_timeout_sec = 30
+tool_timeout_sec = 480
+env = { BHOOT_MODE = 'accounts' }
+
+# OPTIONAL: put hooks in user-level Grok config (project config may not load hooks).
+# Enable only if you want the explicit marker-based Stop-hook mode.
+# [[hooks.Stop]]
+# hooks = [{ type = "command", command = 'node C:\path\to\AutoMCP\dist\hook.js', timeout = 480, env = { BHOOT_MODE = 'accounts' } }]

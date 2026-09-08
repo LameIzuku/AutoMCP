@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+*.local.json
+.env.*
+!.env.example
+*.log
+bridge.json
+*.pem
+*.key
